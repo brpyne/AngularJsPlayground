@@ -1,0 +1,12 @@
+﻿{
+  "name": "Nexus S",
+  "additionalFeatures": "Nexus's Contour Display for Defy, Near Field Communications (NFC)",
+  "android": {
+      "os": "Android N 2.3",
+      "ui": "Android"
+  },
+  "storage": {
+      "flash": "16384MB",
+      "ram": "512MB"
+  }
+}

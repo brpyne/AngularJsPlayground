@@ -140,6 +140,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\app\phones\nexus-s.json" />
+    <Content Include="Scripts\app\phones\motorola-xoom-with-wifi.json" />
+    <Content Include="Scripts\app\phones\motorola-xoom.json" />
+    <None Include="Scripts\app\phones\motorola-defy-with-motoblur.json" />
     <Content Include="Scripts\app\partials\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

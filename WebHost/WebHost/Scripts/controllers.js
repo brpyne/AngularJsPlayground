@@ -21,11 +21,13 @@ function PhoneListCtrl($scope, $http) {
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
 
-function PhoneDetailCtrl($scope, $routeParams) {
-    $scope.phoneId = $routeParams.phoneId;
+function PhoneDetailCtrl($scope, $routeParams, $http) {
+    $http.get('/Scripts/app/phones/' + $routeParams.phoneId + '.json').success(function (data) {
+        $scope.phone = data;
+    });
 }
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
 
+//PhoneDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
 
 
 
