@@ -8,3 +8,6 @@
      "snippet": "The Next, Next Generation tablet."}
   ];
 }
+
+
+$scope.hello = "Hello, World!"
