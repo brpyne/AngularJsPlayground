@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "Google Phone Gallery: {{query}}";
-    
+
     /*
     While using double curlies works fine within the title element, you might have noticed that for a split second they are actually 
      * displayed to the user while the page is loading. A better solution would be to use the ngBind or ngBindTemplate directives,
@@ -11,46 +11,45 @@
 }
 
 <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <!--Sidebar content-->
+    <div class="row-fluid">
+        <div class="span2">
+            <!--Sidebar content-->
  
-      Search: <input ng-model="query">
- 
-    </div>
-    <div class="span10">
-      <!--Body content-->
+            Search: <input ng-model="query">
         
-        Sort by:
-        <select ng-model="orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
-          <option value="-age">Oldest</option>
-        </select>
+                    Sort by:
+                    <select ng-model="orderProp">
+                        <option value="name">Alphabetical</option>
+                        <option value="age">Newest</option>
+                        <option value="-age">Oldest</option>
+                    </select>
  
-        <ul class="phones">
-            <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-                {{phone.name}}
-                <p>{{phone.snippet}}</p>
-                <p>{{phone.age}}</p>
-            </li>
-        </ul>
+        </div>
+        <div class="span10">
+            <!--Body content-->
+ 
+            <ul class="phones">
+                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                    {{phone.name}}
+                    <p>{{phone.snippet}}</p>
+                    <p>Age: {{phone.age}}</p>
+                </li>
+            </ul>
         
-    <!--
-        Reverse the sort order by adding a - symbol before the sorting value: <option value="-age">Oldest</option>
-        -->
+            <!--
+                Reverse the sort order by adding a - symbol before the sorting value: <option value="-age">Oldest</option>
+                -->
  
+        </div>
     </div>
-  </div>
-</div>
 
 <h2>Experiments</h2>
 
-<h2>Phone JSON</h2>
+<h4>Phone JSON</h4>
 {{phones | json}}
 
 
-
+<h4>Recursion</h4>
 <table>
     <tr><th>row number</th></tr>
     <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
@@ -61,6 +60,7 @@
     <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i+1}}</td></tr>
 </table>
 
+</div>
 
 
 

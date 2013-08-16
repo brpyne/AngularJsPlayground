@@ -3,17 +3,17 @@
 function PhoneListCtrl($scope, $http) {
     
 
-    $http.get('./Scripts/app/phones/phones.json').success(function (data) {
+    $http.get('/Scripts/app/phones/phones.json').success(function (data) {
         $scope.phones = data;
+
+        // Limit to first 5
+        //$scope.phones = data.splice(0, 5);
     });
 
     $scope.orderProp = 'age';
 
 
     $scope.hello = "Hello, World!";
-
-    // Limit to first 5
-    $scope.phones = data.splice(0, 5);
 
 }
 
