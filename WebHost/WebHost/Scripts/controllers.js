@@ -1,9 +1,9 @@
 ﻿
 
-function PhoneListCtrl($scope) {
+function PhoneListCtrl($scope, $http) {
     
 
-    $http.get('phones/phones.json').success(function (data) {
+    $http.get('./Scripts/app/phones/phones.json').success(function (data) {
         $scope.phones = data;
     });
 
@@ -18,7 +18,7 @@ function PhoneListCtrl($scope) {
 }
 
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
+PhoneListCtrl.$inject = ['$scope', '$http'];
 
 
 
