@@ -25,6 +25,7 @@
         <select ng-model="orderProp">
           <option value="name">Alphabetical</option>
           <option value="age">Newest</option>
+          <option value="-age">Oldest</option>
         </select>
  
         <ul class="phones">
@@ -34,12 +35,22 @@
                 <p>{{phone.age}}</p>
             </li>
         </ul>
+        
+    <!--
+        Reverse the sort order by adding a - symbol before the sorting value: <option value="-age">Oldest</option>
+        -->
  
     </div>
   </div>
 </div>
 
 <h2>Experiments</h2>
+
+<h2>Phone JSON</h2>
+{{phones | json}}
+
+
+
 <table>
     <tr><th>row number</th></tr>
     <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
@@ -49,6 +60,10 @@
     <tr><th>row number</th></tr>
     <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i+1}}</td></tr>
 </table>
+
+
+
+
 @section scripts {
     <script type="text/javascript" src="~/Scripts/controllers.js"> </script>
 }
