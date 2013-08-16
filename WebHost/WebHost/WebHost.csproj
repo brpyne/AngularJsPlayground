@@ -140,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\app\js\filters.js" />
     <Content Include="Scripts\app\phones\nexus-s.json" />
     <Content Include="Scripts\app\phones\motorola-xoom-with-wifi.json" />
     <Content Include="Scripts\app\phones\motorola-xoom.json" />

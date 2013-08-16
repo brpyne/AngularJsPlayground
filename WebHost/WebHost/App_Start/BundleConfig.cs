@@ -16,7 +16,8 @@ namespace WebHost
 
             bundles.Add(new ScriptBundle("~/bundles/phoneApp").Include(
                         "~/Scripts/controllers.js",
-                        "~/Scripts/app/js/app.js"));
+                        "~/Scripts/app/js/app.js",
+                        "~/Scripts/app/js/filters.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
