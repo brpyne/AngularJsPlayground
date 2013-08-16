@@ -525,6 +525,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\tests\e2e\controllers.js" />
     <Content Include="Scripts\tests\unit\controllersSpec.js" />
     <Content Include="Scripts\ui-bootstrap-0.5.0.js" />
     <Content Include="Scripts\ui-bootstrap-0.5.0.min.js" />
